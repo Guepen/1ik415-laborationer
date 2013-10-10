@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf8"/>
         <title>Tobias Holst</title>
-        <link rel = "stylesheet" href = "../css/style.css">
+        <link rel = "stylesheet" href = "../css/style.css"/>
+        <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
     </head>
     <body>
     <div id = "container">
@@ -11,17 +12,17 @@
         <h1>Kontakta gärna mig om ni undrar över något!</h1>
     </div>
     <div id = "navigation">
-        <ul>
-            <li><a href = "../index.html">Start</a></li>
-            <li><a href = "laborationer.html">Laborationer</a></li>
-            <li><a href = "presentation.html">Presentation</a></li>
-            <li><a href = "kontakt.html" class = "active">Kontakt</a></li>
+        <ul id = "sprite">
+            <li><a id = "home" href = "../index.html">Start</a></li>
+            <li><a id = "labbar" href = "laborationer.html">Laborationer</a></li>
+            <li><a id = "presentation" href = "presentation.html">Presentation</a></li>
+            <li><a id = "contact" href = "kontakt.html" class = "active">Kontakt</a></li>
         </ul>
     </div>
     <div id = "content">
-    <form method = "POST" action = "http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
+    <form class = "form" border = "1" method = "POST" action = "http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
         <fieldset>
-            <legend>Fråga</legend>
+            <legend class = "noprint">Fråga</legend>
             <p></p>
                 <label>Ärendetyp</label>
                 <select id = "ärende">
@@ -38,7 +39,7 @@
                 </p>
         </fieldset>
         <fieldset>
-            <legend>Kontakta mig</legend>
+            <legend class = "noprint">Kontakta mig</legend>
         <p>   
             <label>Kontakta mig via mail</label>
             <input type = "checkbox" id = "mail" value = "" />
