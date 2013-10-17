@@ -2,9 +2,13 @@
 <html lang="sv">
     <head>
         <meta charset="utf8"/>
+        <meta name = "viewport" content = "width: device-width, initial-scale = 1.0" />
         <title>Tobias Holst</title>
         <link rel = "stylesheet" href = "../css/style.css">
         <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <link rel="stylesheet" href="../css/mobile.css" type="text/css" media="screen and (max-width: 480px)" />
+        <link rel="shortcut icon" href="../css/pics/favicon.ico" type="image/x-icon" />
+        
     </head>
     <body>
     <div id = "container">
@@ -29,8 +33,8 @@
         <li><a href = "#headline3">Laboration 1</a></li>       
         <li><a href = "#headline4">Laboration 2</a></li>
         </ul>
-        <table border = "1" class = "table">
-            <thead>
+        <table border = "1" class = "table" class = "mobile">
+            <thead class = "mobile">
                 <tr>
                     <th>Laboration</th>
                     <th>Uppgift</th>
@@ -38,7 +42,12 @@
                     <th>Redovisat</th>
                 </tr>
             </thead>
-            <tbody>
+           <tfoot class = "mobile">
+                <tr>
+                    <td colspan = "4">Laborationsresultat gällande Tobias Holst</td>
+                </tr>
+                </tfoot>
+                 <tbody class = "mobile">
                 <tr>
                     <td rowspan = "9">1</td>
                     <td>1.1</td>
@@ -86,11 +95,6 @@
                     <td></td>
                 </tr>
                 </tbody>
-                <tfoot>
-                <tr>
-                    <td colspan = "4">Laborationsresultat gällande Tobias Holst</td>
-                </tr>
-                </tfoot>
         </table>
          <a name = "headline3"></a>
         <h3>Laboration 1</h3>
@@ -100,27 +104,6 @@
             <li>Ett första dokument</li>
             <li>Startsidan</li>
             <li>Absoluta och relativa länkar</li>
-            <p></p>
-            <dl>
-                <dt>1.4.1. Vilken är den absoluta sökvägen till filen bottom.html?</dt>
-                <dd>http://www.server.se/html/pages/bottom.html</dd>
-                <p></p>
-                <dt>1.4.2. Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
-                <dd>pages/top.html</dd>
-                <p></p>
-                <dt>1.4.3. Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
-                <dd>../../index.html</dd>
-                <p></p>
-                <dt>1.4.4. Vilken är den absoluta sökvägen till filen index.html?</dt>
-                <dd>http://www.server.se/index.html</dd>
-                <p></p>
-                <dt>1.4.5. Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
-                <dd>bottom.html</dd>
-                <p></p>
-                <dt>1.4.6. Vilken är den relativa sökvägen från filen index.html till top.html</dt>
-                <dd>html/pages/top.html</dd>
-            </dl>
-            <p></p>
             <li>Länkar och mer listor</li>
             <li><a href = "../index.html">Bilder. svg-uppgiften finns under rubriken Hallå igen!</a></li>
             <li>video</li>

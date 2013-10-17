@@ -2,9 +2,13 @@
 <html lang="sv">
     <head>
         <meta charset="utf8"/>
+        <meta name = "viewport" content = "width: device-width, initial-scale = 1.0" />
         <title>Tobias Holst</title>
         <link rel = "stylesheet" href = "../css/style.css"/>
         <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+        <link rel="stylesheet" href="../css/mobile.css" type="text/css" media="screen and (max-width: 480px)" />
+        <link rel="shortcut icon" href="../css/pics/favicon.ico" type="image/x-icon" />
+        
     </head>
     <body>
     <div id = "container">
@@ -21,36 +25,52 @@
     </div>
     <div id = "content">
     <form class = "form" border = "1" method = "POST" action = "http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
-        <fieldset>
             <legend class = "noprint">Fråga</legend>
             <p></p>
                 <label>Ärendetyp</label>
-                <select id = "ärende">
+                <select>
                 <option value = "Fråga">Fråga</option>
                 <option value = "Tips">Tips</option>
                 </select>
                 <p>
                     <label>Rubrik:</label>
-                    <input name = "Rubrik" placeholder = "" />
+                    <input type = "email"/>
                 </p>
                 <p>
                     <label>Fråga:</label>
-                    <textarea name = "Fråga" rows = "3" cols = "50"></textarea>
+                    <input type = "email"/>
                 </p>
-        </fieldset>
-        <fieldset>
-            <legend class = "noprint">Kontakta mig</legend>
+            <legend>Kontakta mig</legend>
         <p>   
             <label>Kontakta mig via mail</label>
-            <input type = "checkbox" id = "mail" value = "" />
+            <input type = "checkbox" id = "mail" />
         </p> 
         <p>
             <label>Kontakta mig via telefon</label>
-            <input type = "checkbox" id = "telefon" value = "" />
+            <input type = "checkbox" id = "telefon" />
         </p>
-        </fieldset>
            <input type = "submit" id = "submit" value = "Skicka frågan" />
     </form>
+    <div id="hcard-Tobias-Harald-Adam-Holst" class="vcard">
+ <span class="fn n">
+    <span class="given-name">Tobias</span>
+  <span class="additional-name">Harald Adam</span>
+  <span class="family-name">Holst</span>
+</span>
+ <div class="org">LNU</div>
+ <a class="email" href="mailto:fifatobbe@gmail.com">fifatobbe@gmail.com</a>
+ <div class="adr">
+  <div class="street-address">Unionsgatan 14</div>
+  <span class="locality">Kalmar</span>
+, 
+  <span class="postal-code">392 33</span>
+
+  <span class="country-name">Sverige</span>
+
+ </div>
+ <div class="tel">0734088453</div>
+<p style="font-size:smaller;">This <a href="http://microformats.org/wiki/hcard">hCard</a> created with the <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.</p>
+</div>
     </div>
     <div id = "footer">
     <p>Jag svarar så fort jag kan!</p>
